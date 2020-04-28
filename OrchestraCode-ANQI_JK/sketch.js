@@ -13,7 +13,7 @@ let song;
 let songPlaying = false;
 
 function setup() {
-  createCanvas(640, 480);
+  var canvs = createCanvas(windowWidth, windowHeight);
   video = createCapture(VIDEO);
   video.hide();
   poseNet = ml5.poseNet(video, modelLoaded);
